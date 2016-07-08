@@ -16,7 +16,7 @@ public class MyThread extends Thread {
 	public void run() {
 //		for(int i = 0; i < 20; i++){
 //			if(tickets > 0){
-//				System.out.println(this.getName() + "��Ʊticket��" + tickets--);
+//				System.out.println(this.getName() + "卖票ticket：" + tickets--);
 //			}
 //		}
 		synchronized(this){
