@@ -2,8 +2,8 @@ package com.david.code;
 
 /**
  * @author David
- * @modifyDate 2016Äê7ÔÂ5ÈÕ
- * @description Í¨¹ı¼Ì³ĞThreadÀàÊµÏÖµÄ¶àÏß³Ì
+ * @modifyDate 2016å¹´7æœˆ5æ—¥
+ * @description é€šè¿‡ç»§æ‰¿Threadç±»å®ç°çš„å¤šçº¿ç¨‹
  */
 public class MyThread extends Thread {
 //	private int tickets = 10;
@@ -16,7 +16,7 @@ public class MyThread extends Thread {
 	public void run() {
 //		for(int i = 0; i < 20; i++){
 //			if(tickets > 0){
-//				System.out.println(this.getName() + "ÂôÆ±ticket£º" + tickets--);
+//				System.out.println(this.getName() + "ï¿½ï¿½Æ±ticketï¿½ï¿½" + tickets--);
 //			}
 //		}
 		synchronized(this){
