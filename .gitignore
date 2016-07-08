@@ -4,6 +4,13 @@
 *.settings/
 *bin/
 
+# mac
+.DS_Store
+
+#idea
+.idea/
+*.iml
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
