@@ -1,4 +1,4 @@
-package com.david.code;
+package com.david.code.thread;
 
 public class Count {
 	public void syncMethod(){
@@ -16,14 +16,16 @@ public class Count {
 	}
 	
 	public void nonSyncMethod(){
-		try {
-			for(int i = 0; i < 5; i++){
-				Thread.sleep(100);
-				
-				System.out.println(Thread.currentThread().getName() + "nonSyncMethod loop:" + i);
+//		synchronized (this) {
+			try {
+				for(int i = 0; i < 5; i++){
+					Thread.sleep(100);
+					
+					System.out.println(Thread.currentThread().getName() + "nonSyncMethod loop:" + i);
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+//		}
 	}
 }

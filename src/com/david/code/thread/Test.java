@@ -1,4 +1,4 @@
-package com.david.code;
+package com.david.code.thread;
 
 public class Test {
 
@@ -32,6 +32,9 @@ public class Test {
 				count.nonSyncMethod();
 			}
 		}, "t2");
+		
+		t1.start();
+		t2.start();
 	}
 
 }
