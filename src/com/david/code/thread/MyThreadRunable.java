@@ -1,10 +1,10 @@
-package com.david.code;
+package com.david.code.thread;
 
 /**
- * @author David
- * @modifyDate 2016Äê7ÔÂ5ÈÕ
- * @description Í¨¹ıÊµÏÖRunnable½Ó¿Ú£¬ÊµÏÖ¶àÏß³Ì
- */
+* @author David
+* @modifyDate 2016å¹´7æœˆ5æ—¥
+* @description é€šè¿‡å®ç°Runnableæ¥å£ï¼Œå®ç°å¤šçº¿ç¨‹
+*/
 public class MyThreadRunable implements Runnable {
 //	private int tickets = 10;
 	
@@ -12,7 +12,7 @@ public class MyThreadRunable implements Runnable {
 	public void run() {
 //		for(int i = 0; i < 20; i++){
 //			if(tickets > 0){
-//				System.out.println(Thread.currentThread().getName() + "ÂôÆ±ticket£º" + tickets--);
+//				System.out.println(Thread.currentThread().getName() + "å–ç¥¨ticketï¼š" + tickets--);
 //			}
 //		}
 		synchronized(this){
